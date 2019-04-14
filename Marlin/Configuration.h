@@ -453,14 +453,15 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-//Tevo Tornado
-#define DEFAULT_Kp 24.93
-#define DEFAULT_Ki 2.20
-#define DEFAULT_Kd 70.45
+  //Tevo Tornado
+  #define DEFAULT_Kp 24.93
+  #define DEFAULT_Ki 2.20
+  #define DEFAULT_Kd 70.45
+
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  // #define DEFAULT_Kp 22.2
+  // #define DEFAULT_Ki 1.08
+  // #define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -973,9 +974,9 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
+#define INVERT_Z_DIR false
 
 // @section extruder
 
@@ -1006,7 +1007,7 @@
 
 // The size of the print bed
 #define X_BED_SIZE 295
-#define Y_BED_SIZE 300
+#define Y_BED_SIZE 290
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
